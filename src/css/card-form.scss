@@ -1,0 +1,97 @@
+@import '_media.scss';
+
+$fColor: #3c4856;
+
+.card-form {
+  color: $fColor;
+  padding: 145px 0 0;
+  font: 12px/120% Tahoma, "Geneva CY", sans-serif;
+  label {
+    font-weight: bold;
+  }
+  %CardFormInput {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  input[type="text"],
+  input[type="number"],
+  .select-item {
+    padding: 0 15px;
+  }
+  input[type="text"],
+  input[type="number"],
+  .select-menu {
+    border: 1px solid #dcdde1;
+  }
+  input[type="text"],
+  input[type="number"] {
+    @extend %CardFormInput;
+    color: $fColor;
+    height: 48px;
+    margin: 6px 0 0;
+    font: 16px/48px Tahoma, "Geneva CY", sans-serif;
+  }
+  .full {
+    width: 100%;
+    display: block;
+  }
+  .row {
+    margin: 19px 0;
+  }
+  .fullAlign {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .btn {
+    @extend %CardFormInput;
+    border: none;
+    display: block;
+    height: 54px;
+    padding: 0 10px;
+    font: 20px/54px Tahoma, "Geneva CY", sans-serif;
+    transition: background-color .5s ease-out 0s;
+  }
+  .subm {
+    color: #fff;
+    margin: 40px 0 0;
+    background-color: #0055d4;
+    &:hover {
+      background-color: darken(#0055d4, 10%);
+    }
+    &:active {
+      background-color: darken(#0055d4, 20%);
+    }
+  }
+  .alarm {
+    color: #f00;
+    margin: 5px 0 0;
+  }
+  .alarmInput {
+    border-color: #f00!important;
+  }
+}
+
+.preloader {
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  z-index: 11;
+  margin: -32px 0 0 -32px;
+  position: absolute;
+  background: url('./img/preloader.gif');
+}
+.blackout {
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  position: fixed;
+  background: #fff;
+}

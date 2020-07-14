@@ -1,0 +1,62 @@
+.select {
+  cursor: pointer;
+  position: relative;
+  &::after {
+    top: 25px;
+    right: 14px;
+    width: 14px;
+    height: 10px;
+    content: ' ';
+    display: block;
+    position: absolute;
+    background: url('./select-arrow.jpg') no-repeat;
+  }
+  input[type="text"] {
+    cursor: pointer;
+    &:placeholder,
+    &::placeholder {
+      color: #3c4856;;
+      opacity: 1;
+    }
+  }
+  .active {
+    color: #fff;
+    &,
+    &:hover {
+      background-color: darken(#0055d4, 10%);
+    }
+  }
+  &-menu {
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    overflow: auto;
+    max-height: 120px;
+    margin-top: 7px;
+    left: -30000px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font: 16px/48px Tahoma, "Geneva CY", sans-serif;
+    &.show {
+      left: 0;
+      z-index: 3;
+    }
+  }
+  body & &-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &-item {
+    line-height: 120%;
+    border-top: 1px solid #dcdde1;
+    background-color: #fff;
+    &:first-of-type {
+      border-top: none;
+    }
+    &:hover {
+      color: #fff;
+      background-color: #0055d4;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "textModal": "Form processed with error try again",
+  "cardNumber": {
+    "alarm": "This card is expired, maybe you entered the number incorrectly, check it once",
+    "isAlarm": true,
+    "value": "",
+    "name": "cardNumber"
+  },
+  "cardName": {
+    "alarm": "Card name field expired",
+    "isAlarm": true,
+    "value": "",
+    "name": "cardName"
+  },
+  "cardCVV": {
+    "alarm": "CVV field expired",
+    "isAlarm": true,
+    "value": "",
+    "name": "cardCVV"
+  },
+  "cardMonth": {
+    "alarm": null,
+    "isAlarm": false,
+    "name": "cardMonth",
+    "value": null,
+    "placeholder": "Month",
+    "isVisible": false,
+    "items": [
+      {
+        "name": "January",
+        "id": 1
+      },
+      {
+        "name": "February",
+        "id": 2
+      },
+      {
+        "name": "March",
+        "id": 3
+      },
+      {
+        "name": "April",
+        "id": 4
+      },
+      {
+        "name": "May",
+        "id": 5
+      },
+      {
+        "name": "June",
+        "id": 6
+      },
+      {
+        "name": "July",
+        "id": 7
+      },
+      {
+        "name": "August",
+        "id": 8
+      },
+      {
+        "name": "September",
+        "id": 9
+      },
+      {
+        "name": "October",
+        "id": 10
+      },
+      {
+        "name": "November",
+        "id": 11
+      },
+      {
+        "name": "December",
+        "id": 12
+      }
+    ]
+  },
+  "cardYear": {
+    "alarm": null,
+    "isAlarm": false,
+    "name": "cardYear",
+    "value": null,
+    "placeholder": "Year",
+    "isVisible": false,
+    "items": [
+      {
+        "name": 20,
+        "id": 20
+      },
+      {
+        "name": 19,
+        "id": 19
+      },
+      {
+        "name": 18,
+        "id": 18
+      },
+      {
+        "name": 17,
+        "id": 17
+      },
+      {
+        "name": 16,
+        "id": 16
+      },
+      {
+        "name": 15,
+        "id": 15
+      }
+  ]
+  }
+}

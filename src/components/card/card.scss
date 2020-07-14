@@ -1,0 +1,43 @@
+.card {
+  width: 418px;
+  height: 263px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin: -289px auto 46px;
+  &-wrap {
+    position: relative;
+    &.load {
+      .card {
+        opacity: .5;
+      }
+    }
+  }
+  &-number {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    margin: 119px 0 54px;
+    word-spacing: 20px;
+    span {
+      display: inline-block;
+      min-width: 66px;
+    }
+  }
+  &-name {
+    float: left;
+    margin: 0 0 0 30px;
+  }
+  &-date {
+    float: right;
+    min-width: 60px;
+    margin: 0 42px 0 0;
+  }
+  &-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    margin: 7px 0 0;
+  }
+}
